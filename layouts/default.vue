@@ -3,14 +3,13 @@
     <!-- Navigation -->
     <b-navbar id="mainNav" toggleable="lg" class="fixed-top navbar-shrink">
       <b-container>
-        <b-link href="#page-top" class="navbar-brand js-scroll-trigger">
+        <b-link href="" class="navbar-brand js-scroll-trigger">
           Our Studio
         </b-link>
         <b-navbar-toggle
           target="nav-collapse"
           class="navbar-toggler navbar-toggler-right"
-        >
-          Menu<i class="fas fa-bars" />
+        ><i class="fas fa-bars" />
         </b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="text-uppercase ml-auto">

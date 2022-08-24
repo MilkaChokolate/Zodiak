@@ -7,9 +7,16 @@
       <title-block title="About" subtitle="Lorem ipsum dolor sit amet consectetur." />
       <b-row>
         <b-col cols="12">
-          <timeline :data-timeline="timeline" />
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+            like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </b-col>
       </b-row>
+      <hr />
     </block-wrap>
     <!-- Services -->
     <block-wrap id="services">
@@ -67,12 +74,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">
-              Our Amazing Team
-            </h2>
-            <h3 class="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
+            <title-block title="Our Amazing Team" subtitle="Lorem ipsum dolor sit amet consectetur." />
           </div>
         </div>
         <div class="row">
@@ -84,21 +86,7 @@
                 Lead Designer
               </p>
               <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-twitter" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-linkedin-in" />
-                  </a>
-                </li>
+                <p class="skills">Skills: Docker, Webpack</p>
               </ul>
             </div>
           </div>
@@ -109,23 +97,7 @@
               <p class="text-muted">
                 Lead Marketer
               </p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-twitter" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-linkedin-in" />
-                  </a>
-                </li>
-              </ul>
+              <p class="skills">Scills: C++, Python, Go</p>
             </div>
           </div>
           <div class="col-sm-4">
@@ -136,21 +108,7 @@
                 Lead Developer
               </p>
               <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-twitter" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-linkedin-in" />
-                  </a>
-                </li>
+                <p class="skills">Scills: VueJS, React, Bootstrap, Tailwind</p>
               </ul>
             </div>
           </div>
@@ -170,12 +128,7 @@
     <section id="contact" class="page-section">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">
-            Contact Us
-          </h2>
-          <h3 class="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
+          <title-block title="Contact us" subtitle="Lorem ipsum dolor sit amet consectetur." />
         </div>
         <!-- * * * * * * * * * * * * * * *-->
         <!-- * * SB Forms Contact Form * *-->
@@ -258,7 +211,8 @@
     <!-- Clients -->
     <section class="py-5">
       <div class="container">
-        <div class="row">
+        <title-block title="Our clients" subtitle="Lorem ipsum dolor sit amet consectetur." />
+        <div class="row clients">
           <div class="col-md-3 col-sm-6">
             <a href="#">
               <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
@@ -294,17 +248,17 @@
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
-                  <i class="fab fa-twitter" />
+                  <i class="fas fa-envelope-open" />
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="#">
-                  <i class="fab fa-facebook-f" />
+                  <i class="fab fa-telegram" />
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="#">
-                  <i class="fab fa-linkedin-in" />
+                  <i class="fab fa-vk" />
                 </a>
               </li>
             </ul>
@@ -376,11 +330,9 @@ import TitleBlock from '../components/TitleBlock'
 import ItemListIcon from '../components/ItemListIcon'
 import WrapListPicture from '../components/WrapListPicture'
 import ItemListPicture from '../components/ItemListPicture'
-import Timeline from '../components/Timeline'
 
 export default {
   components: {
-    Timeline,
     ItemListPicture,
     WrapListPicture,
     ItemListIcon,
@@ -391,41 +343,6 @@ export default {
 
   data () {
     return {
-      timeline: [
-        {
-          picture: '/img/about/1.jpg',
-          head: {
-            title: 'July 2014',
-            subtitle: 'Phase Two Expansion'
-          },
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n' +
-              '                Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,\n' +
-              '                recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium\n' +
-              '                consectetur!'
-        },
-        {
-          picture: '/img/about/1.jpg',
-          head: {
-            title: 'July 2014',
-            subtitle: 'Phase Two Expansion'
-          },
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n' +
-              '                Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,\n' +
-              '                recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium\n' +
-              '                consectetur!'
-        },
-        {
-          picture: '/img/about/1.jpg',
-          head: {
-            title: 'July 2014',
-            subtitle: 'Phase Two Expansion'
-          },
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n' +
-              '                Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,\n' +
-              '                recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium\n' +
-              '                consectetur!'
-        }
-      ]
     }
   }
 }
